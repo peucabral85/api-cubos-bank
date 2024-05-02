@@ -65,7 +65,7 @@ npm run dev
 
 - A requisição é feita com um objeto Json, via body, informando os dados do usuário, de acordo com o exemplo abaixo:
 
-  ```json
+```json
   {
   	"nome": "Miguel dos Anjos Santos",
   	"cpf": "70011122234",
@@ -74,7 +74,7 @@ npm run dev
   	"email": "migueldanjos@gmail.com",
   	"senha": "123456"
   }
-  ```
+```
 
   
 

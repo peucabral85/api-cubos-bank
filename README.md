@@ -174,7 +174,7 @@ npm run dev
 - Este endpoint emite o extrato de uma determinada conta bancária.
 - É utilizado um parâmetro tipo query informando número da conta e senha para liberação do acesso, onde o conteúdo retornado possui o seguinte formato:
 
-<img src="./images/extrato.png">
+<img src="./images/extrato.png" width="700">
 
 ## 🧪 Testes da API
 

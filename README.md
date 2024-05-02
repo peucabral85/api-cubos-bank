@@ -67,9 +67,9 @@ npm run dev
 
   ```json
   {
-      "nome": "Miguel dos Anjos Santos",
-      "cpf": "70011122234",
-      "data_nascimento": "2000-03-15",
+  	"nome": "Miguel dos Anjos Santos",
+  	"cpf": "70011122234",
+  	"data_nascimento": "2000-03-15",
   	"telefone": "71999998888",
   	"email": "migueldanjos@gmail.com",
   	"senha": "123456"
@@ -104,9 +104,9 @@ npm run dev
 
 ```json
 {
-    "data": "2024-05-01 16:58:35",
-    "numero_conta": "1",
-    "valor": 3000
+	"data": "2024-05-01 16:58:35",
+	"numero_conta": "1",
+	"valor": 3000
 }
 ```
 
@@ -121,7 +121,7 @@ npm run dev
 {
 	"numero_conta": "1",
 	"valor": 2000,
-    "senha": "123456"
+        "senha": "123456"
 }
 ```
 
@@ -129,9 +129,9 @@ npm run dev
 
 ```json
 {
-    "data": "2024-05-01 17:03:09",
-    "numero_conta": "1",
-    "valor": 2000
+	"data": "2024-05-01 17:03:09",
+	"numero_conta": "1",
+	"valor": 2000
 }
 ```
 

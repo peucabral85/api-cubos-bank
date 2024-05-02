@@ -216,6 +216,6 @@ O projeto poderá ter novos recursos e melhorias assim que os próximos módulos
 
 ## ✒️ Autor
 
-* **Pericles C. Cabral** - *Projeto Curso Desenvolvimento de Software Full Stack M02* da [Cubos Academy](https://cubos.academy/)
+* **Pericles C. Cabral** - *Projeto Mód. 02 do Curso Desenvolvimento de Software Full Stack* da [Cubos Academy](https://cubos.academy/)
 
 <a href="https://www.linkedin.com/in/periclescabral" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a><a href = "https://github.com/peucabral85"><img src="https://img.shields.io/badge/github-efefef?style=for-the-badge&logo=github&logoColor=black" target="_blank"></a>

@@ -7,7 +7,7 @@ const validaDeposito = (req, res, next) => {
         return res.status(400).json({ "mensagem": "É obrigatório informar o número da conta e o valor de depósito!" });
     }
 
-    if (valor <= 0) {
+    if (valor <= 0 || isNaN(valor)) {
         return res.status(400).json({ "mensagem": "Valor informado inválido. Depósito não efetuado!" });
     }
 
@@ -21,8 +21,8 @@ const validaSaque = (req, res, next) => {
         return res.status(400).json({ "mensagem": "É obrigatório informar o número da conta, o valor de saque e senha!" });
     }
 
-    if (valor <= 0) {
-        return res.status(400).json({ "mensagem": "O valor de saque não pode ser menor que zero. Saque não efetuado!" });
+    if (valor <= 0 || isNaN(valor)) {
+        return res.status(400).json({ "mensagem": "Valor informado inválido. Saque não efetuado!" });
     }
 
     const contaExiste = encontrarConta(numero_conta);
@@ -41,8 +41,8 @@ const validaTransferencia = (req, res, next) => {
         return res.status(400).json({ "mensagem": "É obrigatório informar todos os dados!" });
     }
 
-    if (valor <= 0) {
-        return res.status(400).json({ "mensagem": "Valor de transferência inválido. Transferência não efetuada!" });
+    if (valor <= 0 || isNaN(valor)) {
+        return res.status(400).json({ "mensagem": "Valor informado inválido. Transferência não efetuada!" });
     }
 
     const contaOrigemExiste = encontrarConta(numero_conta_origem);

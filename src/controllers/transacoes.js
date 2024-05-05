@@ -7,14 +7,14 @@ const depositar = (req, res) => {
 
     const contaDeposito = encontrarConta(numero_conta);
 
-    contaDeposito.saldo += valor;
+    contaDeposito.saldo += Number(valor);
 
     const dataFormatada = format(new Date(), "yyyy-MM-dd HH:mm:ss");
 
     depositos.push({
         "data": dataFormatada,
         numero_conta,
-        valor
+        "valor": Number(valor)
     });
 
     return res.status(201).json();
@@ -25,14 +25,14 @@ const sacar = (req, res) => {
 
     const contaSaque = encontrarConta(numero_conta);
 
-    contaSaque.saldo -= valor;
+    contaSaque.saldo -= Number(valor);
 
     const dataFormatada = format(new Date(), "yyyy-MM-dd HH:mm:ss");
 
     saques.push({
         "data": dataFormatada,
         numero_conta,
-        valor
+        "valor": Number(valor)
     });
 
     return res.status(201).json();
@@ -44,8 +44,8 @@ const transferir = (req, res) => {
     const contaOrigem = encontrarConta(numero_conta_origem);
     const contaDestino = encontrarConta(numero_conta_destino);
 
-    contaOrigem.saldo -= valor;
-    contaDestino.saldo += valor;
+    contaOrigem.saldo -= Number(valor);
+    contaDestino.saldo += Number(valor);
 
     const dataFormatada = format(new Date(), "yyyy-MM-dd HH:mm:ss");
 
@@ -53,7 +53,7 @@ const transferir = (req, res) => {
         "data": dataFormatada,
         numero_conta_origem,
         numero_conta_destino,
-        valor
+        "valor": Number(valor)
     });
 
     return res.status(201).json();
